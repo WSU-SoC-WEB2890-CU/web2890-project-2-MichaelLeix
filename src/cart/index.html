@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotend - Cart</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-left blur">
+            <a href="../index.html" class="logo">Home</a>
+            <a href="./index.html" class="cart">Cart</a>
+        </div>
+        <div class="nav-center blur">
+            <input class="search" type="text" placeholder="Search... (PHP NEEDED)" />
+        </div>
+        <div class="nav-right blur">
+            <a href="../custom-order/index.html" class="custom-btn">Custom Prints</a>
+        </div>
+    </nav>
+
+    <section class="cart-section">
+        <div class="cart-container blur">
+            <h1 class="cart-title">Your Cart</h1>
+
+            <div class="cart-columns">
+                <!-- LEFT COLUMN: Products -->
+                <div class="cart-items">
+                    <!-- Product 1 -->
+                    <div class="cart-item">
+                        <img src="/assets/products/thumbnails/bracelets.webp" alt="Charm Bracelet">
+                        <div class="item-details">
+                            <div class="item-title-price">
+                                <h2 class="item-title">Charm Bracelet</h2>
+                                <p class="item-price">$3.99</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="cart-item">
+                        <img src="/assets/products/thumbnails/dragon.webp" alt="Flexible Dragon">
+                        <div class="item-details">
+                            <div class="item-title-price">
+                                <h2 class="item-title">Flexible Dragon</h2>
+                                <p class="item-price">$12.99</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <input type="number" value="2" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="cart-item">
+                        <img src="/assets/products/thumbnails/spotify_tags.png" alt="Spotify Tags">
+                        <div class="item-details">
+                            <div class="item-title-price">
+                                <h2 class="item-title">Spotify Tags</h2>
+                                <p class="item-price">$3.99</p>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Summary -->
+                <div class="cart-summary">
+                    <div class="summary-item"><span>Subtotal:</span><span>$20.97</span></div>
+                    <div class="summary-item"><span>Tax:</span><span>$1.84</span></div>
+                    <div class="summary-item"><span>Shipping:</span><span>$2.50</span></div>
+                    <div class="summary-item total"><span>Total:</span><span>$25.31</span></div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<footer class="site-footer">
+		<div class="footer-content">
+			<h2 class="footer-logo">Hotend Design</h2>
+			<nav class="footer-nav">
+				<a href="#">385-391-6848</a>
+				<a href="mailto:michaelleix@outlook.com">michaelleix@outlook.com</a>
+				<a href="#">Contact</a>
+			</nav>
+			<p class="footer-copy">All products are placeholder images and not actual products.</p>
+			<p class="footer-copy">© 2025 Hotend Design. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+<script src="../index.js"></script>
+</html>
