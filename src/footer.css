@@ -1,0 +1,39 @@
+.site-footer {
+    background: var(--fg);
+    color: var(--fg-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: "Courgette", cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-nav {
+    margin: 1rem 0;
+}
+
+.footer-nav a {
+    margin: 0 0.75rem;
+    color: var(--fg-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--bg-hov);
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+}
