@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./custom-order.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>Hotend - Custom</title>
+</head>
+
+<body>
+    <div class="scrollbar-container">
+        <div id="scrollbar-bg"></div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-left blur">
+            <a href="../index.html" class="logo">Home</a>
+			<a href="../cart/index.html" class="cart">Cart</a>
+        </div>
+        <div class="nav-center blur">
+            <input class="search" type="text" placeholder="Search...">
+        </div>
+        <div class="nav-right blur">
+            <a href="#" class="custom-btn">Request Custom Print</a>
+        </div>
+    </nav>
+
+    <section class="custom-order-section">
+        <form class="custom-form blur" enctype="multipart/form-data" method="POST">
+            <h2>Request a Custom 3D Print</h2>
+
+            <div class="field-row double">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+
+
+            <div class="field-row">
+                <label for="category">Print Material</label>
+                <select id="category" name="material" required>
+                    <option value="">Select material</option>
+                    <option value="PLA">PLA (affordable / standard)</option>
+                    <option value="PETG">PETG (strong / heat resistant)</option>
+                    <option value="TPU">TPU (flexible rubber-like)</option>
+                    <option value="Resin">Resin (high detail)</option>
+                </select>
+            </div>
+
+            <div class="field-row">
+                <label for="description">Project Details</label>
+                <textarea id="description" name="description"
+                    placeholder="Describe your project... dimensions, color, purpose, etc." required></textarea>
+                <div class="helper">Tell us about your project.</div>
+            </div>
+
+            <div class="field-row">
+                <label for="file">Upload Model File (optional)</label>
+
+                <label class="file-upload">
+                    Click to select file (STL, OBJ, ZIP)
+                    <input id="file" name="file" type="file" accept=".stl,.obj,.zip">
+                </label>
+
+                <div class="helper">Max ~50MB. (Optional.)</div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h2 class="footer-logo">Hotend Design</h2>
+            <nav class="footer-nav">
+                <a href="#">385-391-6848</a>
+                <a href="mailto:michaelleix@outlook.com">michaelleix@outlook.com</a>
+                <a href="#">Contact</a>
+            </nav>
+            <p class="footer-copy">Custom print inquiries are reviewed within 24 hours.</p>
+            <p class="footer-copy">© 2025 Hotend Design. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="../index.js"></script>
+
+</html>

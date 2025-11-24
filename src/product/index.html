@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="../footer.css" />
+
+    <title>Hotend - Product Details</title>
+</head>
+
+<body>
+    <div class="scrollbar-container">
+        <div id="scrollbar-bg"></div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-left blur"><a href="../index.html" class="logo">Home</a><a href="../cart/index.html" class="cart">Cart</a></div>
+        <div class="nav-center blur"><input class="search" type="text" placeholder="Search..." /></div>
+        <div class="nav-right blur"><a href="../custom-order/index.html" class="custom-btn">Request Custom Print</a>
+        </div>
+    </nav>
+
+    <section class="product-section">
+        <div class="product-container blur">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="/assets/products/thumbnails/bracelets.webp" alt="Product Thumbnail" />
+                </div>
+
+                <!-- Thumbnail carousel -->
+                <div class="thumbnail-row">
+                    <img src="/assets/products/thumbnails/bracelets.webp" alt="Bracelet 1" class="active" />
+                    <img src="/assets/products/thumbnails/dragon.webp" alt="Bracelet 2" />
+                    <img src="/assets/products/thumbnails/spotify_tags.png" alt="Bracelet 3" />
+                    <img src="/assets/products/thumbnails/planters.webp" alt="Bracelet 4" />
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Charm Bracelets</h1>
+                <p class="product-price">$3.99</p>
+                <p class="product-desc">
+                    These custom 3D-printed bracelets are lightweight, stylish, and designed for everyday wear.
+                    Printed in durable PLA or flexible TPU, and available in multiple colors.
+                </p>
+
+                <div class="option-group">
+                    <label for="color">Color</label>
+                    <select id="color">
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <label for="size">Size</label>
+                    <select id="size">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </div>
+
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Similar Products Carousel -->
+        <div class="similar-products-carousel">
+            <h2 class="similar-header">Similar Products</h2>
+            <div class="similar-cards">
+                <div class="similar-card blur">
+                    <img src="/assets/products/thumbnails/spotify_tags.png" alt="Spotify Tags">
+                    <div class="title-price">
+                        <span class="title">Spotify Tags</span>
+                        <span class="price">$3.99</span>
+                    </div>
+                </div>
+                <div class="similar-card blur">
+                    <img src="/assets/products/thumbnails/dragon.webp" alt="Flexible Dragon">
+                    <div class="title-price">
+                        <span class="title">Flexible Dragon</span>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+                <div class="similar-card blur">
+                    <img src="/assets/products/thumbnails/planters.webp" alt="planters">
+                    <div class="title-price">
+                        <span class="title">Planters</span>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+                <div class="similar-card blur">
+                    <img src="/assets/products/thumbnails/coasters.webp" alt="Coasters">
+                    <div class="title-price">
+                        <span class="title">Coasters</span>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+                <!-- Add more cards if needed -->
+            </div>
+        </div>
+    </section>
+
+	<footer class="site-footer">
+		<div class="footer-content">
+			<h2 class="footer-logo">Hotend Design</h2>
+			<nav class="footer-nav">
+				<a href="#">385-391-6848</a>
+				<a href="mailto:michaelleix@outlook.com">michaelleix@outlook.com</a>
+				<a href="#">Contact</a>
+			</nav>
+			<p class="footer-copy">All products are placeholder images and not actual products.</p>
+			<p class="footer-copy">© 2025 Hotend Design. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+<script src="../index.js"></script>
+<script src="./product.js"></script>
+</html>

@@ -2,27 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Project 2 ...">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="footer.css">
+	<title>Hotend - Home</title>
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+	<div class="scrollbar-container">
+		<div id="scrollbar-bg"></div>
+	</div>
 
-  <script type="module" src="./javascripts/main.js"></script>
+	<nav class="main-nav">
+		<div class="nav-left blur">
+			<a href="./index.html" class="logo">Home</a>
+			<a href="./cart/index.html" class="cart">Cart</a>
+		</div>
+		<div class="nav-center blur">
+			<input class="search" type="text" placeholder="Search...">
+		</div>
+		<div class="nav-right blur">
+			<a href="./custom-order/index.html" class="custom-btn">Request Custom Print</a>
+		</div>
+	</nav>
+
+	<section class="jumbo">
+		<h1>Unique Prints.<br>Endless Possibility.<br><a class="browse-btn" href="./categories/index.html">Browse Products ></a></h1>
+		<div class="scroll-indicator"></div>
+		<div class="divider blur"></div>
+	</section>
+
+	<section class="featured-section">
+		<div class="featured-header">
+			<h1>Featured Products</h1>
+		</div>
+
+		<div class="card-container">
+			<div class="page">
+				<div class="card card1 blur">
+					<img src="assets/products/thumbnails/coasters.webp" alt="coasters">
+					<div class="bottom">
+						<div class="details">
+							<span class="title">Coasters</span>
+							<span class="price">$9.99</span>
+						</div>
+						<div class="description">
+							<span>These are custom made coasters, available in several colors and designs.</span>
+						</div>
+					</div>
+					<a href="./product/index.html" class="blur product-link"><img src="assets/icons/arrow-right.svg"
+							alt="view product"></a>
+				</div>
+				<div class="card card1 blur">
+					<img src="assets/products/thumbnails/planters.webp" alt="planters">
+					<div class="bottom">
+						<div class="details">
+							<span class="title">Planters</span>
+							<span class="price">$8.99</span>
+						</div>
+						<div class="description">
+							<span>Custom made pot planters, available in several shapes and dimensions.</span>
+						</div>
+					</div>
+					<a href="./product/index.html" class="blur product-link"><img src="assets/icons/arrow-right.svg"
+							alt="view product"></a>
+				</div>
+				<div class="card card1 blur">
+					<img src="assets/products/thumbnails/spotify_tags.png" alt="spotify tags">
+					<div class="bottom">
+						<div class="details">
+							<span class="title">Spotify Tags</span>
+							<span class="price">$3.99</span>
+						</div>
+						<div class="description">
+							<span>Spotify tags linked to several picks of your favorite songs. (8 pack)</span>
+						</div>
+					</div>
+					<a href="./product/index.html" class="blur product-link"><img src="assets/icons/arrow-right.svg"
+							alt="view product"></a>
+				</div>
+				<div class="card card1 blur">
+					<img src="assets/products/thumbnails/bracelets.webp" alt="Bracelets">
+					<div class="bottom">
+						<div class="details">
+							<span class="title">Charm Bracelets</span>
+							<span class="price">$3.99</span>
+						</div>
+						<div class="description">
+							<span>Charm bracelets with customizable links, available in several sizes and colors. (8 pack)</span>
+						</div>
+					</div>
+					<a href="./product/index.html" class="blur product-link"><img src="assets/icons/arrow-right.svg"
+							alt="view product"></a>
+				</div>
+				<div class="card card1 blur">
+					<img src="assets/products/thumbnails/dragon.webp" alt="dragon">
+					<div class="bottom">
+						<div class="details">
+							<span class="title">Flexible Dragon</span>
+							<span class="price">$12.99</span>
+						</div>
+						<div class="description">
+							<span>Flexible single-colored dragons available in different lengths and varieties.</span>
+						</div>
+					</div>
+					<a href="./product/index.html" class="blur product-link"><img src="assets/icons/arrow-right.svg"
+							alt="view product"></a>
+				</div>
+				<div class="card card1 blur"></div>
+				<div class="card card1 blur"></div>
+				<div class="card card1 blur"></div>
+			</div>
+		</div>
+		<div class="divider blur"></div>
+	</section>
+
+	<footer class="site-footer">
+		<div class="footer-content">
+			<h2 class="footer-logo">Hotend Design</h2>
+			<nav class="footer-nav">
+				<a href="#">385-391-6848</a>
+				<a href="mailto:michaelleix@outlook.com">michaelleix@outlook.com</a>
+				<a href="#">Contact</a>
+			</nav>
+			<p class="footer-copy">All products are placeholder images and not actual products.</p>
+			<p class="footer-copy">© 2025 Hotend Design. All rights reserved.</p>
+		</div>
+	</footer>
 </body>
+<script src="index.js"></script>
+<script src="landing.js"></script>
+
 </html>

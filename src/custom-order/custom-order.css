@@ -1,0 +1,160 @@
+.custom-order-section {
+    min-height: 100vh;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-form {
+    width: 60%;
+    background: var(--bg-dark);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, .25);
+    height: fit-content;
+}
+
+.custom-form h2 {
+    font-family: 'Courgette';
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+.field-row {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.field-row label {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+.custom-form input,
+.custom-form select,
+.custom-form textarea {
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: .2s;
+    font-weight: bold;
+    padding: 0.85em 1em;
+    box-sizing: border-box;
+}
+
+.custom-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7l4.5 4 4.5-4' /></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 1rem;
+}
+
+
+.custom-form textarea {
+    border-radius: 1rem;
+}
+
+.custom-form input:focus,
+.custom-form select:focus,
+.custom-form textarea:focus {
+    border-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.file-upload {
+    display: inline-block;
+    border: 2px dashed rgba(255, 255, 255, .6);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .2s;
+    font-size: .95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.double {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.double > div {
+    flex-grow: 1;
+}
+
+.double > div > input {
+    margin-top: 0.5em;
+}
+
+
+.field-row label.file-upload {
+    margin-left: 0;
+}
+
+.file-upload:hover {
+    background: rgba(255, 255, 255, .15);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.file-upload input {
+    display: none;
+}
+
+.helper {
+    font-size: .85rem;
+    opacity: .85;
+    margin-left: 1rem;
+}
+
+.submit-btn {
+    margin-top: .6rem;
+    padding: .9rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--bg-hov);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .2s;
+    color: var(--fg-light);
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    background-color: white;
+    color: var(--fg);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, .4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.custom-order-section {
+    background-image: url(../assets/bg.jpg);
+}
