@@ -1,7 +1,6 @@
 .product-section {
     padding-top: 8rem;
     padding-bottom: 1rem;
-    /* matches other pages */
     min-height: unset;
     display: flex;
     justify-content: center;
@@ -10,7 +9,6 @@
     color: var(--fg);
 }
 
-/* Container: two-column on desktop, single column on mobile */
 .product-container {
     width: min(1100px, 94%);
     display: grid;
@@ -25,18 +23,15 @@
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
-/* Left: gallery */
 .product-gallery {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
-/* main image block */
-/* main image block with fixed aspect ratio */
 .product-gallery .main-image {
     width: 100%;
-    aspect-ratio: 4 / 3; /* forces 4:3 ratio, change if you want square or 16:9 */
+    aspect-ratio: 4 / 3;
     border-radius: 1rem;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.06);
@@ -48,19 +43,16 @@
 .product-gallery .main-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* cover ensures image fills container without distortion */
+    object-fit: cover;
     display: block;
     transition: transform .25s ease;
     border-radius: 1rem;
 }
 
-
-/* subtle hover zoom */
 .product-gallery .main-image img:hover {
     transform: scale(1.03);
 }
 
-/* thumbnail row similar to featured carousel */
 .thumbnail-row {
     display: flex;
     gap: 0.75rem;
@@ -117,14 +109,12 @@
     font-weight: bold;
 }
 
-/* options (selects) */
 .option-group {
     display: flex;
     gap: 0.6rem;
     flex-direction: column;
 }
 
-/* style selects to match site feel */
 .option-group label {
     color: rgba(255, 255, 255, 0.95);
     font-weight: 700;
@@ -150,14 +140,13 @@
     cursor: pointer;
 }
 
-/* controls area */
 .add-cart-btn {
     margin-top: 0.5rem;
     padding: 0.9rem 1.1rem;
     border-radius: 2rem;
     border: none;
-    background: white;
-    color: var(--fg);
+    background: var(--bg-hov);
+    color: var(--fg-light);
     font-weight: 800;
     cursor: pointer;
     width: 100%;
@@ -167,13 +156,12 @@
 
 .add-cart-btn:hover {
     transform: translateY(-3px);
-    background: var(--bg-hov);
-    color: var(--fg-light);
+    background: white;
+    color: var(--fg);
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
 }
 
 
-/* Related carousel (horizontal scroll with snap) */
 .related-carousel {
     width: min(1100px, 94%);
     margin: 2rem auto 0;
@@ -188,7 +176,6 @@
     text-align: left;
 }
 
-/* simple card carousel — reuse small card styling */
 .related-cards {
     display: grid;
     grid-auto-flow: column;
@@ -217,7 +204,6 @@
     border-radius: 8px;
 }
 
-/* small title and price in related */
 .related-card .title {
     font-weight: 700;
     font-size: 0.95rem;
@@ -230,7 +216,6 @@
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* responsive */
 @media (max-width: 880px) {
     .product-container {
         grid-template-columns: 1fr;
@@ -329,7 +314,6 @@
 	box-shadow: 0 8px 22px rgba(0,0,0,0.2);
 }
 
-/* Responsive adjustments */
 @media (max-width: 880px) {
     .similar-cards {
         grid-auto-columns: 160px;

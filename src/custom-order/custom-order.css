@@ -13,6 +13,7 @@
     flex-direction: column;
     padding: 1em;
     border: 1px solid rgba(255, 255, 255, .25);
+    height: fit-content;
 }
 
 .custom-form h2 {
@@ -94,6 +95,21 @@ textarea {
     box-sizing: border-box;
 }
 
+.double {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.double > div {
+    flex-grow: 1;
+}
+
+.double > div > input {
+    margin-top: 0.5em;
+}
+
+
 .field-row label.file-upload {
     margin-left: 0;
 }
@@ -118,20 +134,27 @@ textarea {
     padding: .9rem 1rem;
     border-radius: 2rem;
     border: none;
-    background: white;
+    background-color: var(--bg-hov);
     font-weight: 700;
     font-size: 1.1rem;
     cursor: pointer;
     transition: .2s;
-    color: var(--fg);
+    color: var(--fg-light);
+    width: 100%;
 }
 
 .submit-btn:hover {
     transform: translateY(-2px);
+    background-color: white;
+    color: var(--fg);
     box-shadow: 0 6px 18px rgba(255, 255, 255, .4);
 }
 
 .submit-btn:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+.custom-order-section {
+    background-image: url(../assets/bg.jpg);
 }
